@@ -1,0 +1,23 @@
+span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+.span--fi-subtitle {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 129%;
+    color: #fdfdfd;
+    opacity: 0.8;
+}
+
+.span--price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fdfdfd;
+    cursor: auto;
+    user-select: none;
+}
