@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
     line-height: 1.5;
 }
@@ -12,13 +16,17 @@
     min-width: 390px;
     font-family: var(--font-family);
 
-    background-color: var(--grey);
+    background-color: #fff;
 }
 
 .container {
     margin: 0 auto;
     padding: 0 var(--container-offset);
     max-width: calc(var(--container-width) + (var(--container-offset) * 2));
+}
+
+p {
+    margin: 0;
 }
 
 .list-reset {
@@ -34,9 +42,30 @@
     cursor: pointer;
 }
 
+a {
+    transition: var(--link-trs);
+}
+
 .link-reset {
     text-decoration: none;
     color: inherit;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+input:active, 
+input:focus,
+input:hover {
+    outline: inherit;
+    border: inherit;
 }
 
 .visually--hidden {

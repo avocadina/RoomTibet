@@ -1,3 +1,12 @@
 :root {
-    
+    --font-family: "Nunito Sans", sans-serif;
+    --second-family: "NEXT ART", sans-serif;
+    --third-family: "Inter", sans-serif;
+
+    --container-width: 1180px;
+    --container-offset: 15px;
+    --section-gap: 100px;
+
+    --btn-trs: transform 0.3s ease-out, background-color 0.3s ease, outline 0.3s ease;
+    --link-trs: color 0.3s ease, text-decoration 0.3s ease;
 }

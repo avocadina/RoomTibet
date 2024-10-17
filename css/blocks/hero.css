@@ -1,0 +1,23 @@
+.hero {
+    margin-bottom: var(--section-gap);
+    padding-bottom: 82px;
+
+    background: url("../../img/hero/hero-bg.jpg") no-repeat center / cover;
+    background-size: cover;
+    height: 985px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}

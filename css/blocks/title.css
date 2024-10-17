@@ -1,0 +1,25 @@
+.title {
+    margin: 0;
+}
+
+.title--24 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 83%;
+}
+
+.title--32 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    color: #18121e;
+}
+
+.title--50 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(1.75rem, 1.25rem + 2.5vw, 3.125rem);
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fdfdfd;
+}
