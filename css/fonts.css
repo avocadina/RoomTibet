@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "";
+    src: local(""), url("../fonts/") format("woff2"),
+      url("../fonts/") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    font-stretch: normal;
+    /* unicode-range: U+00-FF, U+980-9FF; */
+    font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+  }
