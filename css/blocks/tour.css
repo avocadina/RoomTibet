@@ -47,9 +47,7 @@
 @media(any-hover: hover) {
     .tour__image1:hover::after {
         backdrop-filter: brightness(1.1);
-
     }
-
 }
 
 .tour__image2 {

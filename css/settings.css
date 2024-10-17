@@ -51,6 +51,19 @@ a {
     color: inherit;
 }
 
+.visually--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 input {
     outline: none;
     border: none;
@@ -68,19 +81,12 @@ input:hover {
     border: inherit;
 }
 
-.visually--hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 18px;
+    aspect-ratio: 1;
 
+    background: url("../../img/hero/date-icon.svg") no-repeat center / contain;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
