@@ -10,12 +10,9 @@
     border-radius: 6px;
     box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
     padding: 40px 100px;
-    z-index: 10;
 
-    
     transform: translate(0, 50%);
     margin-top: -96px;
-    z-index: 10;
     background: #fdfdfd;
 }
 

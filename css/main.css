@@ -22,3 +22,6 @@
 @import url("./blocks/report.css");
 @import url("./blocks/footer-form.css");
 @import url("./blocks/footer.css");
+
+/* media */
+@import url("./media.css");
