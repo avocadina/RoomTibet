@@ -1,0 +1,136 @@
+.footer {
+    background: #1a3e3e;
+    z-index: -1;
+    padding-top: 178px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 80px 0;
+}
+
+.footer__col--big {
+    grid-column: 5 span;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.f-company__par {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.f-email {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    transition: var(--link-trs);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social__item {
+    width: 32px;
+    height: 32px;
+}
+
+.social__item svg {
+    display: block;
+}
+
+.footer__col--med {
+    grid-column: 4 span;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer__col--sm {
+    grid-column: 3 span;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer__item {
+    padding-left: 18px;
+    position: relative;
+}
+
+.footer__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 14px;
+    transition: backgroung 0.3s ease;
+    background: url('../../img/marker.svg') no-repeat top left / 10px 14px;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fdfdfd;
+
+    translate: var(--link-trs);
+}
+
+@media (any-hover: hover) {
+    .footer__item:hover::before {
+        background: url('../../img/markerhover.svg') no-repeat top left / 10px 14px;
+    }
+
+    .footer__item:hover .footer__link,
+    .footer__link:hover .f-email {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #f2be22;
+    }
+}

@@ -21,3 +21,10 @@ span {
     cursor: auto;
     user-select: none;
 }
+
+.span--date-yellow {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #f2be22;
+}

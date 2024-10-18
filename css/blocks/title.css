@@ -2,6 +2,7 @@
     margin: 0;
     font-family: var(--font-family);
     width: fit-content;
+    transition: var(--link-trs);
 }
 
 .title--18 {
@@ -12,11 +13,32 @@
     color: #18121e;
 }
 
+.title--20 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #f3f5f4;
+}
+
+.footer-upperform__heading .title--18 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 111%;
+    color: #f2be22;
+}
+
 .title--24 {
     font-weight: 400;
     font-size: 24px;
     line-height: 83%;
     color: #f2be22;
+}
+
+.title--26 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+    color: #18121e;
 }
 
 .title--32 {
@@ -37,4 +59,8 @@
 
 .title--white {
     color: #fdfdfd;
+}
+
+.title--black {
+    color: #18121e;
 }

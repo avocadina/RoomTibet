@@ -1,0 +1,122 @@
+.blog {
+    margin-bottom: var(--section-gap);
+    background-color: #f3f5f4;
+    padding: 77px 0 103px;
+}
+
+.blog__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.blog__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.blog__item {
+    grid-column: 3 span;
+}
+
+.blog__card {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+
+    padding: 16px;
+    background: #fdfdfd;
+    border-radius: 10px;
+}
+
+.bcard__image {
+    border-radius: 6px;
+    width: 250px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.bcard__image img {
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease-out
+}
+
+.bc__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    position: relative;
+
+    padding: 16px 0;
+    max-width: 294px;
+}
+
+.bc-content__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.bc-content__heading .title--24 {
+    transition: underline 0.3s ease, color 0.3s ease;
+}
+
+.bc-content__par {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #18121e;
+
+    display: -webkit-box;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.bc-content__extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bc-content__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #1a3e3e;
+}
+
+.bc-content__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+@media (any-hover: hover) {
+    .bc__content:hover .title--24 {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #1a3e3e;
+    }
+
+    .bcard__image:hover img {
+        transform: scale(1.02);
+    }
+}
+
