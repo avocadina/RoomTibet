@@ -3,38 +3,38 @@
     position: relative;
     width: 30px;
     height: 30px;
-    padding: 2px;
-}
-
-.burger span {
-    transition: opacity 0.3s ease, transform 0.5s ease, top 0.5s ease, left 0.5s ease;
+    padding: 6px 4px;
+    z-index: 10;
 }
 
 .burger__line {
     display: inline-block;
     border-radius: 10px;
     position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: #282828;
-    transition: opacity 0.3s ease, transform 0.5s ease, top 0.5s ease, left 0.5s ease;
+    width: 21px;
+    height: 3px;
+    background-color: #fdfdfd;
+    transition: opacity 0.5s ease, transform 0.5s ease, top 0.5s ease, left 0.5s ease;
 }
 
 .burger__line:first-child {
     transform: rotate(0deg);
     transform-origin: center;
-    top: 0;
+    top: 6px;
 }
 
 .burger__line:nth-child(2){
+    transform: translateX(0);
     transform-origin: center;
-    top: 10px;
+    top: 13px;
 }
 
 .burger__line:last-child{
     transform: rotate(0deg);
     transform-origin: center;
-    bottom: 0;
+    bottom: 7px;
+    right: 5px;
+    width: 12px
 }
 
 .burger--active .burger__line:first-child {
@@ -46,8 +46,10 @@
     transform: rotate(-45deg);
     transform-origin: center;
     top: 50%;
+    width: 21px;
 }
 
 .burger--active .burger__line:nth-child(2) {
     opacity: 0;
+    transform: translateX(150%);
 }

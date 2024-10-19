@@ -12,3 +12,12 @@ observer.observe(document.querySelector('.offer'));
 observer.observe(document.querySelector('.feedback'));
 observer.observe(document.querySelector('.blog'));
 observer.observe(document.querySelector('.report'));
+
+// burger
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav--active');
+    burger.classList.toggle('burger--active');
+    document.querySelector('body').classList.toggle('stop-scrolling');
+})

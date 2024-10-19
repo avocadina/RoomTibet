@@ -10,6 +10,7 @@
 @import url("./blocks/logo.css");
 @import url("./blocks/grid.css");
 @import url("./blocks/animations.css");
+@import url("./blocks/burger.css");
 
 /* index */
 @import url("./blocks/header.css");
