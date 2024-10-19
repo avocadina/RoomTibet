@@ -228,13 +228,15 @@
         padding: 16px;
         padding-top: 50px;
         opacity: 0;
+
         
         position: absolute;
         z-index: 12;
         inset: 0;
         transform: translateX(-10%);
 
-        transition: transform 0.5s ease-out, opacity 0.3s ease;
+        transition: transform 0.5s ease-out, opacity 0.3s ease,
+        background-color 0.7s ease;
     }
 
     .header__nav .btn {
@@ -280,7 +282,7 @@
         background: url('../../img/marker.svg') no-repeat top left / 10px 14px;
     }
 
-    .nav--active .nav__link {
+    .nav__link {
         font-size: 16px;
     }
 
